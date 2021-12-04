@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import Sidebar from "../Components/Sidebar";
-import Carousel from "../Components/Carousel";
+import Sidebar from "../Components/sidebar";
+import Carousel from "../Components/carousel";
 
 export default function Home() {
   return (
