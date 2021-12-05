@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import OuterDetect from '../outerDetect'
+import OuterDetect from '../outerDetect.js'
 
 const SideBar = () => {
     const [mobilesidebar, setMobileSiderbar] = useState('-translate-x-full');
