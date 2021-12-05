@@ -4,6 +4,8 @@ import '../styles.scss';
 import Router from "next/router";
 import Notiflix from 'notiflix';
 import { useEffect, useState } from 'react';
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 
 
 
@@ -19,6 +21,7 @@ function MyApp({ Component, pageProps }) {
     { isLoading ? Notiflix?.Loading?.pulse() : Notiflix?.Loading?.remove(789)  }
   }, [isLoading])
   return <>
+   <DefaultSeo {...SEO} />
     <Component {...pageProps} />
   </>
 }
