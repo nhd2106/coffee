@@ -7,7 +7,6 @@
     return data;
   }
   async function fetchGraphql(query, { variables } = {}) {
-      console.log(query);
     const requestUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}`;
     const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
    const res = await fetch(requestUrl, {
@@ -46,6 +45,5 @@
           }
         }
       }`);
-      console.log('called', products)
     return products;
   }
