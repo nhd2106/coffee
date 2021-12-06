@@ -24,6 +24,8 @@ function MyApp({ Component, pageProps }) {
    <DefaultSeo {...SEO} />
     <Component {...pageProps} />
   </>
+
 }
+
 
 export default MyApp
