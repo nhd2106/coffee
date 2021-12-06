@@ -4,10 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 import Sidebar from "../components/sidebar";
 import Carousel from "../components/carousel";
+import { NextSeo } from 'next-seo'
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen md:flex">
+    <>
+      <NextSeo title="Trang chủ" />
+      <div className="relative min-h-screen md:flex">
       <Sidebar />
       <div className="text-2xl font-bold w-full h-full md:pl-80">
         <Carousel />
@@ -152,5 +155,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }

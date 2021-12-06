@@ -2,6 +2,7 @@ export default {
     title : "Tùng Coffee",
     titleTemplate : 'Tùng Coffee | %s',
     canonical: 'https://tungcoffee.vercel.app/',
+    description: 'Tùng coffee, số 4 đường D9, Tân phú, Hồ Chí Minh. Cà phê ngon quận tân phú, quán cf đẹp quận tân phú',
     openGraph: {
         type: 'website',
         locale: 'vi_VN',
