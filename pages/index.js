@@ -84,12 +84,16 @@ function Home({ products }) {
                 <div className="grid md:grid-cols-12">
                   <ul className="list-none md:col-span-6 sm:col-span-12">
                     {[0, 1, 2, 3, 4, 5].map((i) => {
-                      const { name, avatar, feature, price } = products[i];
+                      const { name, avatar, description, price } = products[i];
                       return (
                         <li key={i}>
                           <div className="grid grid-cols-12 text-sm p-5">
                             <div className="col-span-2 flex justify-center h-20 w-20">
-                              <img src={avatar.url} alt="cf" className="rounded-circle" />
+                              <img
+                                src={avatar.url}
+                                alt="cf"
+                                className="rounded-circle"
+                              />
                             </div>
                             <div className="col-span-10 self-center">
                               <div className="flex items-center">
@@ -99,15 +103,18 @@ function Home({ products }) {
                                     height: "3px",
                                     borderBottom: "1px dashed #939393",
                                     display: "table-cell",
-                                    width: "98%",
+                                    width: "90%",
                                     zIndex: 1,
                                     position: "relative",
                                     bottom: "9px",
+                                    transform: "translate(0%, 400%)",
                                   }}
                                 />
-                                <p>{price}</p>
+                                <p>
+                                  {price.toLocaleString()}đ
+                                </p>
                               </div>
-                              <div>Fresh Brewed coffee and steamed milk</div>
+                              <div>{description}</div>
                             </div>
                           </div>
                         </li>
@@ -116,12 +123,16 @@ function Home({ products }) {
                   </ul>
                   <ul className="list-none md:col-span-6 sm:col-span-12">
                     {[6, 7, 8, 9, 10, 11].map((i) => {
-                      const { name, avatar, price } = products[i];
+                      const { name, avatar, price, description } = products[i];
                       return (
                         <li key={i}>
                           <div className="grid grid-cols-12 text-sm p-5">
                             <div className="col-span-2 flex justify-center h-20 w-20">
-                              <img src={avatar.url} alt="cf"  className='rounded-circle'/>
+                              <img
+                                src={avatar.url}
+                                alt="cf"
+                                className="rounded-circle"
+                              />
                             </div>
                             <div className="col-span-10 self-center">
                               <div className="flex items-center">
@@ -131,15 +142,16 @@ function Home({ products }) {
                                     height: "3px",
                                     borderBottom: "1px dashed #939393",
                                     display: "table-cell",
-                                    width: "98%",
+                                    width: "90%",
                                     zIndex: 1,
                                     position: "relative",
                                     bottom: "9px",
+                                    transform: "translate(0%, 400%)",
                                   }}
                                 />
-                                <p>{price}</p>
+                                <p>{price.toLocaleString()}đ</p>
                               </div>
-                              <div>Fresh Brewed coffee and steamed milk</div>
+                              <div>{description}</div>
                             </div>
                           </div>
                         </li>

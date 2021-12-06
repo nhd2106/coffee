@@ -32,7 +32,9 @@
 
   export async function getProducts() {
     const products = await fetchGraphql(`query {
-        productsCollection {
+        productsCollection(where: {
+          feature: true
+        }) {
           items{
             name,
             price,
@@ -41,7 +43,7 @@
                   },
             slug,
             feature
-            
+            description
           }
         }
       }`);
