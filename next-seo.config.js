@@ -8,14 +8,14 @@ export default {
         locale: 'vi_VN',
         url : 'https://tungcoffee.vercel.app/',
         site_name: 'tungcoffee',
-        // images : [
-        //     {
-        //         url: 'https://yeuvivu.vn:1337/uploads/vagabond_cafe_ha_noi_1_62962b07e9.jpg',
-        //         width: 800,
-        //         height: 600,
-        //         alt: 'Og Image Alt',
-        //     }
-        // ]
+        images : [
+            {
+                url: 'https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-1a.jpg',
+                width: 800,
+                height: 600,
+                alt: 'Og Image Alt',
+            }
+        ]
         
     }
 }
