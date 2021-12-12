@@ -13,7 +13,7 @@ function Home({ products }) {
     <>
       <NextSeo title="Trang chủ" />
       
-      <div className="text-2xl font-bold w-full h-full md:pl-80">
+      <div className="text-base font-bold w-full h-full md:pl-80">
           <Carousel />
           <div className="bg-gray-700 text-white pb-20">
             <div className="flex flex-col items-center py-10 justify-center text-center">
@@ -23,13 +23,15 @@ function Home({ products }) {
                 alt="tung-coffee"
               />
               <div className="lg:w-1/2 py-10">
-                <h2>ABOUT ROBUSTA</h2>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aspernatur doloremque rem eveniet at, odio explicabo adipisci,
-                  libero deleniti corrupti fugiat dolorem eius exercitationem
-                  consequuntur earum, molestiae maiores architecto? Veritatis,
-                  sequi!
+                <h2 className="text-2xl">ABOUT ROBUSTA</h2>
+                <p className="py-4">
+                Cà phê Robusta hay còn được gọi là cà phê vối với vị đắng đặc trưng.
+                Loại cà phê này được phát hiện đầu tiên vào những năm 1800 tại Congo- Bỉ.
+                Sau đó, dần dần giống cà phê này phát triển và được đưa vào các nước Đông Nam Á trong khoảng năm 1900.
+                Cho đến hiện nay, Cà phê Robusta đã trở thành loại cây quan trọng thứ hai,
+                chiếm khoảng 39% các sản phẩm cà phê được sử dụng và được đánh giá là loại được xuất khẩu cao nhất tại Việt Nam.
+                Cà phê Robusta hay còn có tên là cà phê vối hay Coffea Canephora.
+                Đây là loại cà phê có hàm lượng caffein chiếm từ 3% đến 4% ở hạt, cao hơn nhiều so với loại cà phê Arabica (cà phê chè) chỉ chiếm từ 1% đến 2%.
                 </p>
               </div>
             </div>
@@ -71,12 +73,11 @@ function Home({ products }) {
                 />
               </div>
             </div>
-            <div className="">
+            <div>
               <div className="text-center">
-                <h2>Bảng giá</h2>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
+                <h2 className="text-2xl">Bảng giá</h2>
+                <p>
+                  Dưới đây là Menu một số thức uống nổi bật của quán. Để xem đầy đủ các món, mời bạn vào danh mục Menu của Tùng Coffe nhé!.
                 </p>
               </div>
               <div>

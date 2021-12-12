@@ -8,6 +8,9 @@ module.exports = {
         'circle': '50% 50%',
       }
     },
+    fontFamily: {
+      'body': ['"Open Sans"'],
+    }
   },
   variants: {
     extend: {},
