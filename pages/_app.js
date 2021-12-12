@@ -5,6 +5,9 @@ import Router from "next/router";
 import Notiflix from "notiflix";
 import { useEffect, useState } from "react";
 import { DefaultSeo } from "next-seo";
+import { useRouter } from 'next/router';
+
+
 import SEO from "../next-seo.config";
 import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
@@ -12,6 +15,9 @@ import Sidebar from "../components/sidebar";
 function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
   const [is_visible, setIs_visible] = useState(false);
+
+  const { asPath } = useRouter();
+
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setIs_visible(true);
@@ -66,7 +72,7 @@ function MyApp({ Component, pageProps }) {
           </button>
         ) : null}
       </div>
-      <Footer />
+      { asPath!== '/contact' && <Footer/> }
     </>
   );
 }
