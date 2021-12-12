@@ -12,9 +12,8 @@ function Home({ products }) {
   return (
     <>
       <NextSeo title="Trang chủ" />
-      <div className="relative min-h-screen md:flex">
-        <Sidebar />
-        <div className="text-2xl font-bold w-full h-full md:pl-80">
+      
+      <div className="text-2xl font-bold w-full h-full md:pl-80">
           <Carousel />
           <div className="bg-gray-700 text-white pb-20">
             <div className="flex flex-col items-center py-10 justify-center text-center">
@@ -88,7 +87,7 @@ function Home({ products }) {
                       return (
                         <li key={i}>
                           <div className="grid grid-cols-12 text-sm p-5">
-                            <div className="col-span-2 flex justify-center h-20 w-20">
+                            <div className="col-span-2 flex justify-center h-12 w-12 sm:h-20 sm:w-20">
                               <img
                                 src={avatar.url}
                                 alt="cf"
@@ -127,7 +126,7 @@ function Home({ products }) {
                       return (
                         <li key={i}>
                           <div className="grid grid-cols-12 text-sm p-5">
-                            <div className="col-span-2 flex justify-center h-20 w-20">
+                            <div className="col-span-2 flex justify-center h-12 w-12 sm:h-20 sm:w-20">
                               <img
                                 src={avatar.url}
                                 alt="cf"
@@ -164,7 +163,6 @@ function Home({ products }) {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

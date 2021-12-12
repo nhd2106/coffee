@@ -36,7 +36,7 @@ const SideBar = () => {
           backgroundImage:
             "url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/header-vertical.jpg)",
         }}
-        className={`bg-blue-800  w-80 space-y-6 py-7 px-4 absolute z-20  inset-y-0 left-0 transform md:fixed top-0 md:translate-x-0 transition duration-200 ease-in-out ${mobilesidebar}`}
+        className={`w-80 space-y-6 py-7 px-4 absolute z-20  inset-y-0 left-0 transform md:fixed top-0 md:translate-x-0 transition duration-200 ease-in-out ${mobilesidebar}`}
       >
         {/* logo */}
         <Link href="/">
@@ -52,17 +52,17 @@ const SideBar = () => {
             Trang chủ
           </a>
           </Link>
-          <Link href="/">
+          <Link href="/menu">
           <a className="block py-2.5 px-4 hover:bg-red-300 duration-200 rounded">
             Menu
           </a> 
           </Link>
-          <Link href="/">
+          <Link href="/blog">
           <a className="block py-2.5 px-4 hover:bg-red-300 duration-200 rounded">
             Blog
           </a>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
           <a className="block py-2.5 px-4 hover:bg-red-300 duration-200 rounded">
             Liên hệ
           </a>
