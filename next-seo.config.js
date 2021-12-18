@@ -10,7 +10,7 @@ export default {
         site_name: 'tungcoffee',
         images : [
             {
-                url: 'https://www.tungcoffee.com/ogimage.jpeg',
+                url: 'https://www.tungcoffee.com/slider1.jpeg',
                 width: 800,
                 height: 600,
                 alt: 'Og Image Alt',

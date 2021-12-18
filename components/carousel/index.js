@@ -12,7 +12,7 @@ const Carousel = () => {
           style={{
               height: '100%'
           }}
-          src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-1a.jpg"
+          src="slider1.jpeg"
         />
       </div>
       <div>
@@ -22,7 +22,7 @@ const Carousel = () => {
           style={{
               height: '100%'
           }}
-          src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-2a.jpg"
+          src="slider2.jpeg"
         />
       </div>
       <div>
@@ -32,7 +32,7 @@ const Carousel = () => {
           style={{
               height: '100%'
           }}
-          src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-3a.jpg"
+          src="slider3.jpeg"
         />
       </div>
     </Slider>

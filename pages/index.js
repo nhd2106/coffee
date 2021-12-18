@@ -13,7 +13,7 @@ function Home({ products }) {
           <div className="bg-gray-700 text-white pb-20">
             <div className="flex flex-col items-center py-10 justify-center text-center">
               <img
-                src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-above.png"
+                src="title-above.webp"
                 width="217px"
                 alt="tung-coffee"
               />
@@ -33,37 +33,37 @@ function Home({ products }) {
             <div className="grid-cols-3 p-5 space-y-2  lg:space-y-0 lg:grid lg:gap-3 lg:grid-rows-3">
               <div className="w-full rounded hover:bg-gray-400  transition duration-200 ease-in">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-6.jpg"
+                  src="home-img1.jpeg"
                   alt="image1"
                 />
               </div>
               <div className="w-full col-span-2 row-span-2 rounded">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-7.jpg"
+                  src="home-img2.jpeg"
                   alt="image2"
                 />
               </div>
               <div className="w-full rounded">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-8.jpg"
+                  src="home-img3.jpeg"
                   alt="image3"
                 />
               </div>
               <div className="w-full rounded">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-6.jpg"
+                  src="home-img1.jpeg"
                   alt="image4"
                 />
               </div>
               <div className="w-full rounded">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-8.jpg"
+                  src="home-img3.jpeg"
                   alt="image5"
                 />
               </div>
               <div className="w-full rounded">
                 <img
-                  src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-img-8.jpg"
+                  src="home-img3.jpeg"
                   alt="image6"
                 />
               </div>

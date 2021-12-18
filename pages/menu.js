@@ -12,7 +12,7 @@ const Menu = ({ products, types }) => {
       <div
         style={{
           backgroundImage:
-            "url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/menu-title.jpg)",
+            "url(https://www.tungcoffee.com//menu-title.jpg)",
           height: 480,
           backgroundPosition: "center 0px",
           backgroundRepeat: "no-repeat",
@@ -33,12 +33,11 @@ const Menu = ({ products, types }) => {
         <>
           {Object.entries(products).map(([type, productByTypes]) => {
             const typeName = types?.find(({ id }) => id === type).name;
-
             return (
-              <div>
+              <div key={type}>
                 <div className="flex flex-col items-center py-10 justify-center text-center">
                   <img
-                    src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-above.png"
+                    src="title-above.webp"
                     width="217px"
                     alt="tung-coffee"
                   />
