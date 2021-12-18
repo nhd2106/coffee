@@ -75,7 +75,6 @@ const SideBar = () => {
               <span className="mx-2">Fanpage</span>
             </a>
         </nav>
-       
         </div>
         {/* <div className="absolute top-0 bg-gray-400 opacity-40" style={{ width: '100vw', height:'100vh'}}></div> */}
       </div>

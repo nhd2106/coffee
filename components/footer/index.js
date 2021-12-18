@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="fb-page"
                 data-href="https://www.facebook.com/tungcoffee4"
-                data-width="100%"
+                data-width="350"
                 data-hide-cover="false"
                 data-show-facepile="true"></div>
       <div className="max-w-screen-xl mx-auto px-4 pt-8">
