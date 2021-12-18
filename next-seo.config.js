@@ -10,7 +10,7 @@ export default {
         site_name: 'tungcoffee',
         images : [
             {
-                url: 'https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-2-slider-image-1a.jpg',
+                url: 'https://www.tungcoffee.com/ogimage.jpeg',
                 width: 800,
                 height: 600,
                 alt: 'Og Image Alt',
