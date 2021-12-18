@@ -30,7 +30,7 @@
    return json.data;
   }
 
-  export async function getProducts() {
+  export async function getFeatureProducts() {
     const products = await fetchGraphql(`query {
         productsCollection(where: {
           feature: true
@@ -49,3 +49,37 @@
       }`);
     return products;
   }
+
+  export async function getAllProducts() {
+    const products = await fetchGraphql(`
+    query {
+      productsCollection {
+        items{
+          name,
+          price,
+          slug,
+          avatar {
+            url
+          },
+          type {
+            id,
+          }, 
+          description
+        }
+      }
+    }`);
+    return products?.productsCollection?.items;
+  }
+  
+export async function getProductTypes() {
+  const types = await fetchGraphql(`
+  {
+    typesCollection {
+      items{
+        id,
+        name
+      }
+    }
+  }`);
+  return types?.typesCollection?.items;
+}

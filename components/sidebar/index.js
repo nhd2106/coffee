@@ -7,12 +7,12 @@ const SideBar = () => {
     const [mobilesidebar, setMobileSiderbar] = useState('-translate-x-full');
     return (
        <>
-         <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden">
+         <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden sticky top-0 z-10">
         <Link href="/">
           <a className="block p-4 font-bold">Tùng Coffee</a>
         </Link>
         <OuterDetect func={() => setMobileSiderbar('-translate-x-full')}>
-        <button onClick={() => setMobileSiderbar((prev) => prev==='' ? '-translate-x-full' : '')} className="p-4 focus:outline-none  focus:bg-gray-700">
+        <button onClick={() => setMobileSiderbar((prev) => prev==='' ? '-translate-x-full' : '')} className="p-4 focus:outline-none  focus:bg-gray-700 z-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

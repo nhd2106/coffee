@@ -1,12 +1,7 @@
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import Sidebar from "../components/sidebar";
 import Carousel from "../components/carousel";
 import { NextSeo } from "next-seo";
 
-import { getProducts } from "./api/index";
+import { getFeatureProducts, getProducts } from "./api/index";
 
 function Home({ products }) {
   return (
@@ -169,12 +164,7 @@ function Home({ products }) {
 }
 
 export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
-  const products = (await getProducts())?.productsCollection?.items;
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
+  const products = (await getFeatureProducts())?.productsCollection?.items;
   return {
     props: {
       products,
