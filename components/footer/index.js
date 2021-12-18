@@ -6,7 +6,7 @@ const Footer = () => {
         <div
         classNameName="h-96"
         style={{
-            backgroundImage: 'url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-bottom-image.jpg)',
+            backgroundImage: 'url(https://www.tungcoffee.com/bottom-img.jpeg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'

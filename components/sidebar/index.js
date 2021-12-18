@@ -36,7 +36,7 @@ const SideBar = () => {
       <div
         style={{
           backgroundImage:
-            "url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/header-vertical.jpg)",
+            "url(https://www.tungcoffee.com/header-vertical.jpeg)",
         }}
         className={` w-80 space-y-6 py-7 px-4 absolute z-20  inset-y-0 left-0 transform  md:fixed top-0 md:translate-x-0 transition duration-200 ease-in-out ${mobilesidebar}`}
       >
