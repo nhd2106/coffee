@@ -61,7 +61,7 @@ const Contact = () => {
         <div class="w-1/2 shadow-2xl">
           <img
             class="hidden object-cover w-full md:block"
-            src="https://www.tailwind-kit.com/images/object/9.jpg"
+            src="contact.jpeg"
             style={{
                 height:'calc(100vh - 2.5rem)'
             }}
