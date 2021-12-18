@@ -58,7 +58,7 @@ const Card = ({
           <div className="relative text-white px-6 pb-6 mt-6">
             {/* <span className="block opacity-75 -mb-1">Indoor</span> */}
             <div className="flex flex-col justify-end	">
-              <span className="block font-semibold text-sm self-end">
+              <span className="block font-semibold text-sm self-end md:text-xl">
                 {name || ""}
               </span>
               <span className="bg-white rounded-full text-yellow-500 text-xs font-bold px-3 py-2 leading-none flex justify-end">
