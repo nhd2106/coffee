@@ -9,7 +9,7 @@ const Card = ({
 }) => {
     return (
       <>
-        <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-blue-400 rounded-lg max-w-xs shadow-lg hidden sm:block">
+        <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-gray-500 rounded-lg max-w-xs shadow-lg hidden sm:block">
           <svg
             className="absolute bottom-0 left-0 mb-8"
             viewBox="0 0 375 283"
@@ -37,8 +37,8 @@ const Card = ({
             <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
             <picture
               style={{
-                width: 160,
-                height: 200,
+                width: 200,
+                height: 300,
               }}
             >
               {/* <source
@@ -70,7 +70,7 @@ const Card = ({
 
         {/*  */}
 
-        <div className="flex bg-white mx-2 my-2 dark:bg-gray-800 rounded-lg shadow sm:hidden">
+        <div className="flex bg-gray-500 text-white mx-2 my-2 dark:bg-gray-800 rounded-lg shadow sm:hidden">
           <div className="flex-none w-24 md:w-48  relative">
             <img
              src={avatar?.url ?? ""}
@@ -86,14 +86,14 @@ const Card = ({
               <h2 className="flex-auto font-semibold dark:text-gray-50">
                 {name  || ""}
               </h2>
-              <div className="font-semibold text-gray-500 dark:text-gray-300">
+              <div className="font-semibold text-white dark:text-gray-300">
               {price.toLocaleString()} đ
               </div>
             </div>
-            <div className="flex items-baseline mt-4 mb-6 text-gray-700 dark:text-gray-300">
+            <div className="flex items-baseline mt-4 mb dark:text-gray-300">
               <a
                 href="#"
-                className="ml-auto hidden md:block text-sm text-gray-500 dark:text-gray-300 underline"
+                className="ml-auto hidden md:block text-sdark:text-gray-300 underline"
               >
                 Size Guide
               </a>

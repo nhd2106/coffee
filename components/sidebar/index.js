@@ -9,7 +9,7 @@ const SideBar = () => {
     console.log(sidebar);
     return (
        <>
-         <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden sticky top-0 z-10">
+         <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden sticky top-0 z-20">
         <Link href="/">
           <a className="block p-4 font-bold">Tùng Coffee</a>
         </Link>
