@@ -1,16 +1,19 @@
-import "tailwindcss/tailwind.css";
-import "react-awesome-slider/dist/styles.css";
-import "../styles.scss";
+
 import Router from "next/router";
+import Head from "next/head";
 import Notiflix from "notiflix";
 import { useEffect, useState } from "react";
 import { DefaultSeo } from "next-seo";
 import { useRouter } from 'next/router';
 
-
+import "tailwindcss/tailwind.css";
+import "react-awesome-slider/dist/styles.css";
+import "../styles.scss";
 import SEO from "../next-seo.config";
 import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
+
+
 
 function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -48,6 +51,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
+      <Head>
+          <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0" nonce="ywbB34Xn"></script>
+        <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js"></script>
+        </Head>
       <div className="relative min-h-screen md:flex">
         <Sidebar />
         <Component {...pageProps} />

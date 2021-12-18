@@ -75,6 +75,11 @@ const SideBar = () => {
               <span className="mx-2">Fanpage</span>
             </a>
         </nav>
+        <div className="fb-page"
+                data-href="https://www.facebook.com/tungcoffee4"
+                data-width="300"
+                data-hide-cover="false"
+                data-show-facepile="true"></div>
         </div>
         {/* <div className="absolute top-0 bg-gray-400 opacity-40" style={{ width: '100vw', height:'100vh'}}></div> */}
       </div>
