@@ -6,7 +6,6 @@ import OuterDetect from '../outerDetect.js'
 const SideBar = () => {
     const [mobilesidebar, setMobileSiderbar] = useState('-translate-x-full');
     const sidebar = !mobilesidebar ? 'sticky-sidebar' : "";
-    console.log(sidebar);
     return (
        <>
          <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden sticky top-0 z-20">
