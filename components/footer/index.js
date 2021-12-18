@@ -33,7 +33,7 @@ const Footer = () => {
         </ul>
         <div>
 
-        <div className="fb-page"
+        <div className="fb-page flex justify-center"
                 data-href="https://www.facebook.com/tungcoffee4"
                 data-width="350"
                 data-hide-cover="false"

@@ -70,6 +70,7 @@ function MyApp({ Component, pageProps }) {
               height: "2.5rem",
               width: "2.5rem",
               minWidth: "unset",
+              zIndex: 10,
             }}
             type="button"
             onClick={scrollToTop}
