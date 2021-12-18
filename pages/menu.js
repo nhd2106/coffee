@@ -12,7 +12,7 @@ const Menu = ({ products, types }) => {
       <div
         style={{
           backgroundImage:
-            "url(https://www.tungcoffee.com//menu-title.jpg)",
+            "url(https://www.tungcoffee.com//menu-title.jpeg)",
           height: 480,
           backgroundPosition: "center 0px",
           backgroundRepeat: "no-repeat",
