@@ -5,6 +5,8 @@ import OuterDetect from '../outerDetect.js'
 
 const SideBar = () => {
     const [mobilesidebar, setMobileSiderbar] = useState('-translate-x-full');
+    const sidebar = !mobilesidebar ? 'sticky-sidebar' : "";
+    console.log(sidebar);
     return (
        <>
          <div className="bg-gray-800 text-gray-100 flex justify-between md:hidden sticky top-0 z-10">
@@ -36,9 +38,10 @@ const SideBar = () => {
           backgroundImage:
             "url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/header-vertical.jpg)",
         }}
-        className={`sidebar w-80 space-y-6 py-7 px-4 absolute z-20  inset-y-0 left-0 transform  md:fixed top-0 md:translate-x-0 transition duration-200 ease-in-out ${mobilesidebar}`}
+        className={` w-80 space-y-6 py-7 px-4 absolute z-20  inset-y-0 left-0 transform  md:fixed top-0 md:translate-x-0 transition duration-200 ease-in-out ${mobilesidebar}`}
       >
         {/* logo */}
+        <div className={sidebar}>
         <Link href="/">
           <a className="px-4 flex items-center space-x-2">
             <Image src="/coffee.svg" width={50} height={50} color="white" />
@@ -72,6 +75,7 @@ const SideBar = () => {
               <span className="mx-2">Fanpage</span>
             </a>
         </nav>
+        </div>
         {/* <div className="absolute top-0 bg-gray-400 opacity-40" style={{ width: '100vw', height:'100vh'}}></div> */}
       </div>
        </>
