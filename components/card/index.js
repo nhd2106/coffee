@@ -9,7 +9,7 @@ const Card = ({
 }) => {
     return (
       <>
-        <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-gray-500 rounded-lg max-w-xs shadow-lg hidden sm:block">
+        <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-red-400 rounded-lg max-w-xs shadow-lg hidden sm:block">
           <svg
             className="absolute bottom-0 left-0 mb-8"
             viewBox="0 0 375 283"

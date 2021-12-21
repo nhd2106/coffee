@@ -8,7 +8,7 @@ import { getAllProducts, getProductTypes } from "./api/index";
 
 const Menu = ({ products, types }) => {
   return (
-    <div className="text-2xl text-white font-bold w-full h-full md:pl-80 bg-gray-700">
+    <div className="text-2xl text-white font-bold w-full h-full md:pl-80 bg-red-500">
       <div
         style={{
           backgroundImage:

@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = (bg) => {
   return (
-    <footer className="bg-black text-white w-full pb-8 text-2xl font-bold h-full md:pl-80">
+    <footer className="bg-red-400 text-white w-full pb-8 text-2xl font-bold h-full md:pl-80">
         <div
         classNameName="h-96"
         style={{
@@ -24,7 +24,7 @@ const Footer = () => {
           ].map(({ title, slug }) => (
             <li className="my-2" key={slug}>
               <Link href={slug}>
-                <a className="text-gray-400 hover:text-gray-200 dark:text-gray-300 dark:hover:text-white transition-colors duration-200">
+                <a className="text-white hover:text-gray-200 dark:text-gray-300 dark:hover:text-white transition-colors duration-200">
                   {title}
                 </a>
               </Link>
