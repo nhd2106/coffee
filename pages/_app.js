@@ -12,6 +12,7 @@ import "../styles.scss";
 import SEO from "../next-seo.config";
 import Footer from "../components/footer";
 import Sidebar from "../components/sidebar";
+import Snowfall from 'react-snowfall';
 
 
 
@@ -57,6 +58,8 @@ function MyApp({ Component, pageProps }) {
         </Head>
       <div className="relative min-h-screen md:flex">
         <Sidebar />
+
+        <Snowfall style={{ zIndex: 1000 }} snowflakeCount={500} />
         <Component {...pageProps} />
         {is_visible ? (
           <button
