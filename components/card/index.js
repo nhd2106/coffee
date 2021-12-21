@@ -70,7 +70,7 @@ const Card = ({
 
         {/*  */}
 
-        <div className="flex bg-gray-500 text-white mx-2 my-2 dark:bg-gray-800 rounded-lg shadow sm:hidden">
+        <div className="flex bg-red-400 text-white mx-2 my-2 dark:bg-gray-800 rounded-lg shadow sm:hidden">
           <div className="flex-none w-24 md:w-48  relative">
             <img
              src={avatar?.url ?? ""}
