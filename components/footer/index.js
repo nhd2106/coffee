@@ -4,7 +4,7 @@ const Footer = (bg) => {
   return (
     <footer className="bg-red-400 text-white w-full pb-8 text-2xl font-bold h-full md:pl-80">
         <div
-        classNameName="h-96"
+        className="h-96"
         style={{
             backgroundImage: 'url(https://www.tungcoffee.com/bottom-img.jpeg)',
             backgroundPosition: 'center',
