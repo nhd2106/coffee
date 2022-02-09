@@ -10,7 +10,7 @@ function Home({ products }) {
       
       <div className="text-base font-bold w-full h-full md:pl-80">
           <Carousel />
-          <div className="bg-red-400 text-white pb-20">
+          <div className="bg-gray-700 text-white pb-20">
             <div className="flex flex-col items-center py-10 justify-center text-center">
               <img
                 src="title-above.webp"

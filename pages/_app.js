@@ -140,7 +140,7 @@ function MyApp({ Component, pageProps }) {
       <div className="relative min-h-screen md:flex">
         <Sidebar />
 
-        <Snowfall style={{ zIndex: 19 }} snowflakeCount={500} />
+        {/* <Snowfall style={{ zIndex: 19 }} snowflakeCount={500} /> */}
         <Component {...pageProps} />
         {is_visible ? (
           <button
