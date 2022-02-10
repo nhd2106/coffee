@@ -6,7 +6,7 @@ import { getFeatureProducts } from "./api/index";
 function Home({ products }) {
   return (
     <>
-      <NextSeo title="Trang chủ, tungcoffee, Cf Tân Phú, Cà Phê ngon" />
+      <NextSeo title="Trang chủ, Tung coffee, Cafe Tân Phú, Cà Phê ngon" />
       
       <div className="text-base font-bold w-full h-full md:pl-80">
           <Carousel />
